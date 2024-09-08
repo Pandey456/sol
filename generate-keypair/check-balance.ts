@@ -8,7 +8,7 @@ if (!supplied_key){
 
 
 const publicKey =new PublicKey(supplied_key);
-const connection = new Connection("https://api.mainnet.solana.com", "confirmed");
+const connection = new Connection("https://api.devnet.solana.com", "confirmed");
 const bal=connection.getBalance(publicKey);
 const sol_bal= await bal/LAMPORTS_PER_SOL;
 console.log(`balance in sol is ${sol_bal}`);
